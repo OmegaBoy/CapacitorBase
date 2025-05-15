@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/home/app:rw
     restart: 'no'
-    command: sh
+    command: sh -c "npm install && quasar dev"
     stdin_open: true
     tty: true
     environment:
